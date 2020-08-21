@@ -1,11 +1,26 @@
 # AI-powered-FlappyBird
 A Flappy Bird Game Trained to play by itself or user
 
-# Requirements
+## Requirements
 Run the Following commands in the command line before starting:
+pip install -r requirements.txt
 
-pip install pygame
+### pygame installation might create problems 
+**check this article to fix it**  
+https://github.com/pygame/pygame/issues/1536#issuecomment-632600514
 
-pip install neat 
+## Train
+**RUN:** python3 Flappy_Train.py 
 
-qaysufioal
+
+## Play
+**RUN:** python3 Flappy_Game.py
+
+### Playing instructions
+
+- Use `UP arrow` key to move up
+- Press `Spacebar` if you feel like not playing the game and let AI handle the rest
+
+## Open to Contributions and Issues
+
+- Feel Free to reach out to my email-id or github issues to contact
