@@ -1,9 +1,16 @@
 # AI-powered-FlappyBird
-A Flappy Bird Game Trained to play by itself or user
+A Flappy Bird Game Trained( With Genetic algorithm for 10 Generations to a max of Score 30) to play by itself or user.
+Either Use the trained model to play the game or Train a model before playing.
+**Note:** The model is set for the current playing conditions and might vary with different conditions.
 
-## Requirements
+![./avg_fitness.svg](avg_fitness.svg)
+
+## Setup
 Run the Following commands in the command line before starting:
-pip install -r requirements.txt
+
+- python3 -m venv venv
+- source venv/bin/activate
+- pip3 install -r requirements.txt
 
 ### pygame installation might create problems 
 **check this article to fix it**  
