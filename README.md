@@ -1,6 +1,6 @@
 # AI-powered-FlappyBird
 A Flappy Bird Game Trained( With Genetic algorithm for 10 Generations to a max of Score 30) to play by itself or user.
-Either Use the trained model to play the game or Train a model before playing.
+Either Use the trained model to play the game or Train a model before playing.<br>
 **Note:** The model is set for the current playing conditions and might vary with different conditions.
 
 ![./avg_fitness.svg](avg_fitness.svg)
@@ -28,10 +28,6 @@ https://github.com/pygame/pygame/issues/1536#issuecomment-632600514
 
 - Use `UP arrow` key to move up
 - Press `Spacebar` if you feel like not playing the game and let AI handle the rest
-
-### visualize stats 
-
-visualize.py displays stats on the terminal while training
 
 ## Open to Contributions and Issues
 
