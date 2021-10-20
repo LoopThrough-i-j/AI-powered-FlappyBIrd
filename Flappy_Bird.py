@@ -146,6 +146,7 @@ class Pipe:
 
         self.x = x
         self.height = 0
+        self.sign = 1
 
         # where the top and bottom of the pipe is
         self.top = 0
@@ -161,13 +162,23 @@ class Pipe:
 
     def set_height(self):
 
-        self.height = random.randrange(30, 300)
+        self.height = random.randrange(60, 270)
         self.top = self.height - self.PIPE_TOP.get_height()
         self.bottom = self.height + self.GAP
+    
+    def change_height(self):
+        
+        self.change = random.randrange(0, 40)
+        self.height = self.height + self.sign * self.change/2
+        self.top = self.height - self.PIPE_TOP.get_height()
+        self.bottom = self.height + self.GAP - self.sign * self.change
+        self.sign *= -1
 
     def move(self):
 
         self.x -= self.VEL
+        if self.x % 15 == 0:
+            self.change_height()
 
     def draw(self, win):
 
