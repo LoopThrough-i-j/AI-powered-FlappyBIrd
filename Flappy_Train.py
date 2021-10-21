@@ -47,7 +47,7 @@ def eval_genomes(genomes, config):
     nets = []
     birds = []
     ge = []
-    for genome_id, genome in genomes:
+    for _, genome in genomes:
         genome.fitness = 0  # start with fitness level of 0
         net = neat.nn.FeedForwardNetwork.create(genome, config)
         nets.append(net)
@@ -169,7 +169,7 @@ def run(config_file):
     p.add_reporter(stats)
     p.add_reporter(neat.Checkpointer(5))
 
-    # Run for up to 50 generations.
+    # Run for up to 10 generations.
     winner = p.run(eval_genomes, 10)
     visualize.plot_stats(statistics=stats)
 
